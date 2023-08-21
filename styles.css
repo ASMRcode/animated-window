@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
+    background: linear-gradient(227deg, #18f2da, #181518, #f610bb);
+    background-size: 400% 400%;
+
+    -webkit-animation: bgGradient 20s ease infinite;
+    -moz-animation: bgGradient 20s ease infinite;
+    -o-animation: bgGradient 20s ease infinite;
+    animation: bgGradient 20s ease infinite;
+}
+
+@-webkit-keyframes bgGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bgGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes bgGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bgGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.window {
+    background-color: #3636367c;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #ffffff96;
+    width: 70vw;
+    margin: 80px auto;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.title-bar {
+    background-color: #2424249c;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #242424;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #ffffff30;
+    border-bottom-style:dotted;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: thin;
+    color: #f486eb;
+    text-shadow: 0px 0px 10px #f486eb96;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button {
+    width: 14px;
+    height: 14px;
+    margin-left: 8px;
+    border-radius: 50%;
+}
+
+.button.close {
+    background-color: #ff5f57;
+    box-shadow: 0px 0px 10px #ff5f57d8;
+}
+
+.button.minimize {
+    background-color: #ffbd2e;
+    box-shadow: 0px 0px 10px #ffbd2ed8;
+}
+
+.button.maximize {
+    background-color: #28c940;
+    box-shadow: 0px 0px 7px #28c940d8;
+}
+
+.content {
+    padding: 20px;
+}
+
+.contentText {
+    font-size: 13px;
+    font-weight: light;
+    color: #edf486;
+    text-shadow: 0px 0px 10px #edf48696;
+}
+
+.authorText {
+    font-size: 13px;
+    font-weight: light;
+    color: #18f2da;
+    text-shadow: 0px 0px 10px #18f2da96;
+    margin-top: 20px;
+}
